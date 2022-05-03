@@ -162,7 +162,7 @@ The design used here to achieve this is the simple resistor string DAC which con
 # Contributor
 Aakash.K</br>
 Contact:iaakashkrish@gmail.com</br>
-Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. - kunalpghosh@gmail.com
+Kunal Ghosh, Co-founder, VLSI SYSTEM DESIGN (VSD) Corp Pvt.Ltd - kunalpghosh@gmail.com
 
 # Acknowledgments
 * Kunal Ghosh, Co-founder, VLSI SYSTEM DESIGN (VSD) Corp Pvt.Ltd - kunalpghosh@gmail.com
