@@ -144,7 +144,7 @@ Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. - kunalpghosh@gmail.com
 # Acknowledgments
 * Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. - kunalpghosh@gmail.com
 * Muthukrishnan Chinnasamy, CEO of Semiconductor Fabless Accelerator Lab(SFAL)
-
+* Montu Makadia - Semiconductor Fabless Accelerator Lab(SFAL)
 
 
 
