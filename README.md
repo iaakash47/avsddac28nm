@@ -1,11 +1,11 @@
 
-# POTENTIOMETRIC DIGITAL-TO-ANALOG CONVERTER
+# POTENTIOMETRIC  10BIT DIGITAL-TO-ANALOG CONVERTER(DAC)
 * The project aims to design a 10-bit Potentiometric Digital to Analog Converter using end-to-end Synopsys Commercial EDA tool(Custom Complier). The target is to design 10-bit potentiometric DAC with 1.8v digital voltage and 1 off-chip external voltage reference using SAED_PDK 28_32nm technology node
 
 # Table of Content
 1. [Introduction](#introduction)
    * [DAC](#dac)
-2. [IP Block Design](#ip-block-design)
+2. [EDA tools used to implement Potentiometric DAC](#eda-tools-used-to-implement-potentiometric-dac)
 3. [Architecture](#architecture)
 4. [IP Design Specifications](#ip-design-specifications)
 5. [Implementation of 10Bit Potentiometric DAC](#implementation-of-10bit-potentiometric-dac)
@@ -27,6 +27,33 @@
 ## Introduction 
 #### DAC 
 * In real world, most of the data available is in the form of analog in nature. We have two types of converters analog to digital converter and digital to analog converter. These two converting interfaces are essential to obtain the required operations of a processor to manipulate the data of digital electronic equipment and an analog electric equipment. Digital to Analog Converter (DAC) is a device that transforms digital data into an analog signal in order to interact with the real world. The digital signal is represented with a binary code, which is a combination of bits 0’s and 1’s. The digital data can be produced from a microprocessor, Field Programmable Gate Array (FPGA), or Application Specified Integrated Circuit (ASIC). There are two commonly used DAC conversions – Weighed resistors method and R-2R ladder network method. Applications of a DAC: audio amplifier, video encoder, display electronics, data acquisition systems, calibration, Digital potentiometer.
+
+* A n-bit Digital to Analog Converter (DAC) takes a n-bit digital word and converts it into a proportional analog voltage with respect to the reference voltage. The potentiometric DAC uses the concept of Voltage Divider. In an N-bit DAC, the analog voltage range, i.e. the Vref (here 1.8 V) is equally divided into 2^N voltage values. This is achieved by a series on 2^N equal resistors and taps are provided across each R. The combination of switches to tap the values is designed using the N-bit digital word as input. An example of N-bit potentiometric DAC is shown in the figure below.
+
+* Two types of DACs :
+
+  * Weighted Resistor DAC
+  * R-2R Ladder DAC
+  
+ # Weighted Resistor DAC
+ 
+ * A weighted resistor DAC produces an analog output, which is almost equal to the digital (binary) input by using binary weighted resistors in the inverting adder circuit. In short, a binary weighted resistor DAC is called as weighted resistor DAC.
+  
+ ### Weighted Resistor DAC Design
+  ![166871259-dc9be251-84f7-4ac6-a7bb-7aed601f6f59](https://user-images.githubusercontent.com/88897605/166975942-7d4475cf-53b6-4cfa-a656-f3e70b055b37.png)
+
+ # R-2R Ladder DAC
+ 
+ * The R-2R Ladder DAC overcomes the disadvantages of a binary weighted resistor DAC. As the name suggests, R-2R Ladder DAC produces an analog output, which is almost equal to the digital (binary) input by using a R-2R ladder network in the inverting adder circuit.
+
+ # R-2R Ladder DAC Design
+ ![166871272-ec5a78ad-90d0-40e3-b2f7-2d93ae7eedcf](https://user-images.githubusercontent.com/88897605/166976030-1b324333-e676-4035-a8fa-f239b96098d5.png)
+
+ 
+### Switch Reference Design
+![switch circuit](https://user-images.githubusercontent.com/88897605/166973863-b4e730ad-2d92-46b2-9e24-0f59a315f0de.png)
+
+The switches are designed as shown in the figure above. The digital voltage of 1.8V or 0V is given at the digital input port for logic 1 and 0 respectively. If the digital input is logic 1, then Vin1 appears at the output port, else Vin2 appears at the output. Hence this switch circuit replaces two switches in same level as it takes into account both the swiches of complemented and uncomplemented bit.
 
 ## EDA tools used to implement Potentiometric DAC
 * The design has been built using Commericial EDA tools like Synopsys Custom Compiler. The library used is SAED32_28nm. 
@@ -66,7 +93,7 @@ The basic idea is to divide the voltage into N different voltage values in the r
 ### Terminal Functions
 |Name	   | Value |	Description       |
 |:-------|:----|:------------------|
-|D_in |v1 = 0V, v2 = 1.05V, u = 0.1us|Digital inputs|
+|D_in |v1 = 0V, v2 = 1.05V, tr = 0.1us|Digital inputs|
 |Capacitor|1pf|DAC analog voltage output|
 |VDDA	|1.8v|Analog voltage supply (1.8v)|
 |VSSA	|0v|Analog ground 0V|
@@ -87,10 +114,24 @@ The basic idea is to divide the voltage into N different voltage values in the r
 
 
 # 2-Bit DAC
+#### specification
+
+|Name	   | Value |	Description       |
+|:-------|:----|:------------------|
+|D_in |v1 = 0V, v2 = 1.05V, tr = 0.1us|Digital inputs|
+|Resistor|200ohms|Resistance|
+|Capacitor|5pf|Capacitance|
+|VDDA	|1.8v|Analog voltage supply (1.8v)|
+|VSSA	|0v|Analog ground 0V|
+|VREFH |1.2v|Reference voltage High for DAC|
+|VREFL |0.8v|Reference voltage low for DAC|
 
 * 2-Bit DAC is implemented using 3 switch instances. 2-Bit circuitry and waveform are shown below
 
 ## 2-Bit DAC design and simulation:
+
+* For the 2 bit DAC, switch circuit was included as a subcircuit. After creating the schematics, the spice netlist was extracted. The necessary model files of SAED32nm tt transistors were included in the netlist and transient analysis was performed.
+* 
 ![DAC_2bit_DAC_schematic](https://user-images.githubusercontent.com/88897605/164980052-c9267798-0e0c-4e09-8dbd-df99a88a3fcf.png)
 
 ## Symbol
@@ -267,25 +308,31 @@ The basic idea is to divide the voltage into N different voltage values in the r
 ![10bit_DAC](https://user-images.githubusercontent.com/88897605/166895511-83da0a55-ef69-4a4a-ac0c-46a6b1daf717.png)
 
 
+# Note
+* For 3 Bit DAC : D0, D1 and D2
+* For 4 Bit DAC : D0, D1, D2 and D3 and so on.
+* For 10 Bit DAC : D0, D1, D2...., D9.
+* Other Inputs value remains the same as 2 Bit DAC until 10 Bit DAC.
+* For 2 Bit DAC, Number of steps in the output graph = 2^N, i.e, 2^2 = 4 steps
+* For a 10 Bit DAC, Number of steps in the output graph = 2^N, i.e, 2^10 = 1024 steps.
+* The graph value for DAC ranges from VrefH (1.8V) to VrefL (0V).
 
 
 
 # Further Work
-* Need to understand the basics of custom layout and rules for drawing layout 
-* Not able to figure out which metal contact and vias to be used for interconnect
-* issues with DRC,LVS errors 
-* Able to understand the differences between layout editor and Schematic Driven layout 
-* Need to get more familiar with tool for layout usage 
-* Not able to generate Waveforms 
+
+* Need to start with custom layout for implementing 10 bit DAC
 
 # References
 - Sammer Duroji VSD team
+- Kanna Shalini VSD team
+- Skandha Deepsita VSD team 
 
 
 # Contributor
-Aakash.K</br>
-Contact:iaakashkrish@gmail.com</br>
-Kunal Ghosh, Co-founder, VLSI SYSTEM DESIGN (VSD) Corp Pvt.Ltd - kunalpghosh@gmail.com
+* Aakash.K</br>
+  Contact:iaakashkrish@gmail.com</br>
+* Kunal Ghosh, Co-founder, VLSI SYSTEM DESIGN (VSD) Corp Pvt.Ltd - kunalpghosh@gmail.com
 
 # Acknowledgments
 * Kunal Ghosh, Co-founder, VLSI SYSTEM DESIGN (VSD) Corp Pvt.Ltd - kunalpghosh@gmail.com
