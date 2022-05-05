@@ -3,6 +3,24 @@
 * The project aims to design a 10-bit Potentiometric Digital to Analog Converter using end-to-end Synopsys Commercial EDA tool(Custom Complier). The target is to design 10-bit potentiometric DAC with 1.8v digital voltage and 1 off-chip external voltage reference using SAED_PDK 28_32nm technology node
 
 # Table of Content
+1. [Introduction](#introduction)
+    * [DAC](#dac)
+2. [IP Block Design](##ip-block-design)
+4. [Creation of project](#creation-of-project)
+    * [eSim Window ](#esim-window)
+    * [eSim Schematic Window](#esim-schematic-window)
+5. [Reference Circuit](#reference-circuit)
+6. [Reference Waveform](#reference-waveform)
+7. [Methodology](#methodology) 
+8. [Schematic](#schematic)
+9. [Circuit Schematic](#circuit-schematic)
+10. [Netlist](#netlist)
+11. [Initial Transitent Analysis](#initial-transitent-analysis)
+12. [Waveforms](#waveforms)
+    * [Input Waveforms](#input-waveforms)
+    * [Output Waveforms](#output-waveforms)
+13. [References](#references)
+14. [Contributor](#contributor)
 
 ## Introduction 
 #### DAC 
