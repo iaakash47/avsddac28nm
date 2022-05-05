@@ -20,9 +20,8 @@
    * [8-Bit DAC](#8-bit-dac)
    * [9-Bit DAC](#9-bit-dac)
    * [10-Bit DAC](#10-bit-dac)
-9. [Methodology](#methodology)
-15. [References](#references)
-16. [Contributor](#contributor)
+7. [References](#references)
+8. [Contributor](#contributor)
 
 ## Introduction 
 #### DAC 
