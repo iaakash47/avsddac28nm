@@ -4,7 +4,7 @@
 
 # Table of Content
 1. [Introduction](#introduction)
-    * [DAC](#dac)
+   * [DAC](#dac)
 2. [IP Block Design](#ip-block-design)
 3. [Architecture](#architecture)
 4. [IP Design Specifications](#ip-design-specifications)
@@ -198,7 +198,10 @@ The basic idea is to divide the voltage into N different voltage values in the r
 ## 9-Bit DAC Testbench
 
 ![DAC_9bit_DAC_tb_schematic](https://user-images.githubusercontent.com/88897605/164980156-6c773642-8bba-4103-b124-86a1a7563557.png)
+
+## 9 bit DAC waveform
 ![9bit_DAC](https://user-images.githubusercontent.com/88897605/164980838-c7068fd8-92ea-423a-9e28-2945823d1f98.png)
+![10bit_DAC](https://user-images.githubusercontent.com/88897605/166895511-83da0a55-ef69-4a4a-ac0c-46a6b1daf717.png)
 
 
 
@@ -214,11 +217,14 @@ The basic idea is to divide the voltage into N different voltage values in the r
 ## 10-Bit DAC Testbench
 
 ![DAC_10bit_DAC_tb_schematic](https://user-images.githubusercontent.com/88897605/164980174-120c793a-5acd-4902-be25-e3205dc2615e.png)
+
+## 10 bit DAC waveform
+
 ![10bitDAC](https://user-images.githubusercontent.com/88897605/164980476-01544d4a-1c24-44c8-b08e-4427af935878.png)
+![10bit_DAC](https://user-images.githubusercontent.com/88897605/166895511-83da0a55-ef69-4a4a-ac0c-46a6b1daf717.png)
 
 
-# Post layout - Switch
-![DAC_switch_new_layout](https://user-images.githubusercontent.com/88897605/166307188-b493f0c9-e5fc-4498-bcd7-0368cb82060c.png)
+
 
 
 # Further Work
