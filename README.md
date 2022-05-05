@@ -76,7 +76,9 @@ The basic idea is to divide the voltage into N different voltage values in the r
 
 
 # 2-Bit DAC
+
 * 2-Bit DAC is implemented using 3 switch instances. 2-Bit circuitry and waveform are shown below
+
 ## 2-Bit DAC design and simulation:
 ![DAC_2bit_DAC_schematic](https://user-images.githubusercontent.com/88897605/164980052-c9267798-0e0c-4e09-8dbd-df99a88a3fcf.png)
 
@@ -93,7 +95,7 @@ The basic idea is to divide the voltage into N different voltage values in the r
 
 # 3-Bit DAC
 
-* 3-Bit DAC is implemented using 3 switch instances. 2-Bit circuitry and waveform are shown below
+* 3Bit DAC is implemented using 2 2-Bit DACs and 1 switch instances. 3-Bit circuitry and waveform are shown below 
 
 ## 3-Bit DAC design and simulation: 
 ![DAC_3bit_DAC_schematic](https://user-images.githubusercontent.com/88897605/164980065-6536e03c-4f02-43dc-8804-e0a299fdc022.png)
@@ -113,7 +115,7 @@ The basic idea is to divide the voltage into N different voltage values in the r
 
 # 4-Bit DAC
 
-* 4-Bit DAC is implemented using 3 switch instances. 2-Bit circuitry and waveform are shown below
+* 4Bit DAC is implemented using 2 and 3-Bit DACs and 1 switch instances. 4-Bit circuitry and waveform are shown below
 
 ## 4-Bit DAC design and simulation: 
 ![DAC_4bit_DAC_schematic](https://user-images.githubusercontent.com/88897605/164980075-4c164a56-2e68-4562-9b68-fd0466a0b620.png)
@@ -133,7 +135,7 @@ The basic idea is to divide the voltage into N different voltage values in the r
 
 # 5-Bit DAC
 
-* 5-Bit DAC is implemented using 3 switch instances. 2-Bit circuitry and waveform are shown below
+* 5Bit DAC is implemented using 2 and 4-Bit DACs and 1 switch instances. 5-Bit circuitry and waveform are shown below
 
 ## 5-Bit DAC design and simulation:
 ![DAC_5bit_DAC_schematic](https://user-images.githubusercontent.com/88897605/164980093-02bc5682-28bd-43c2-a35e-8cd6af14dcaa.png)
@@ -152,12 +154,10 @@ The basic idea is to divide the voltage into N different voltage values in the r
 
 # 6-Bit DAC
 
-
-* 6-Bit DAC is implemented using 3 switch instances. 2-Bit circuitry and waveform are shown below 
+* 6Bit DAC is implemented using 2 and 5-Bit DACs and 1 switch instances. 6-Bit circuitry and waveform are shown below
 
 ## 6-Bit DAC design and simulation:
 ![DAC_6bit_DAC_schematic](https://user-images.githubusercontent.com/88897605/164980114-d9121f6e-728c-4b42-91ee-aad19d387edc.png)
-
 
 ## Symbol
 ![DAC_6bit_DAC_symbol](https://user-images.githubusercontent.com/88897605/166306091-82979f6f-25ea-490c-9be2-3bd116ac5e16.png)
@@ -174,8 +174,7 @@ The basic idea is to divide the voltage into N different voltage values in the r
 
 # 7-Bit DAC
 
-
-* 7-Bit DAC is implemented using 3 switch instances. 2-Bit circuitry and waveform are shown below
+* 7Bit DAC is implemented using 2 and 6-Bit DACs and 1 switch instances. 7-Bit circuitry and waveform are shown below
 
 ## 7-Bit DAC design and simulation:
 ![DAC_7bit_DAC_schematic](https://user-images.githubusercontent.com/88897605/164980133-b7fcbdf5-0eab-4792-abc6-2ef10252a20a.png)
@@ -196,7 +195,7 @@ The basic idea is to divide the voltage into N different voltage values in the r
 
 # 8-Bit DAC
 
-* 8-Bit DAC is implemented using 3 switch instances. 2-Bit circuitry and waveform are shown below
+* 8Bit DAC is implemented using 2 and 7-Bit DACs and 1 switch instances. 8-Bit circuitry and waveform are shown below
 
 ## 8-Bit DAC design and simulation:
 
@@ -218,8 +217,7 @@ The basic idea is to divide the voltage into N different voltage values in the r
 
 # 9-Bit DAC
 
-
-* 9-Bit DAC is implemented using 3 switch instances. 2-Bit circuitry and waveform are shown below
+* 9Bit DAC is implemented using 2 and 8-Bit DACs and 1 switch instances. 9-Bit circuitry and waveform are shown below
 
 ## 9-Bit DAC design and simulation:
 ![DAC_9bit_DAC_schematic](https://user-images.githubusercontent.com/88897605/164980158-bb4b294b-e96b-48eb-b3d0-b9242e75da15.png)
@@ -239,7 +237,7 @@ The basic idea is to divide the voltage into N different voltage values in the r
 
 # 10-Bit DAC
 
-* 10-Bit DAC is implemented using 3 switch instances. 2-Bit circuitry and waveform are shown below
+* 10Bit DAC is implemented using 2 and 9-Bit DACs and 1 switch instances. 10-Bit circuitry and waveform are shown below
 
 ## 10-Bit DAC design and simulation:
 ![DAC_10bit_DAC_schematic](https://user-images.githubusercontent.com/88897605/164980177-9cf0e6a4-1158-41fc-b02a-b7c8e219aadb.png)
