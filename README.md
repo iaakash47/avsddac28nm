@@ -22,6 +22,7 @@
    * [10-Bit DAC](#10-bit-dac)
 7. [References](#references)
 8. [Contributor](#contributor)
+9. [Acknowledgments](#acknowledgments)
 
 ## Introduction 
 #### DAC 
