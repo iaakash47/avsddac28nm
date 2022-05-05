@@ -52,7 +52,8 @@
 
 
 ## IP Design Specifications
-![IMG_20220424_193255](https://user-images.githubusercontent.com/88897605/164980282-f160bc82-98d2-4270-bd8e-ae72c9e464be.jpg)
+![dac](https://user-images.githubusercontent.com/88897605/166930434-7ad9894c-a916-41a3-841c-8ed220ca2c75.png)
+
 
 
 ## Implementation of 10Bit Potentiometric DAC
@@ -63,13 +64,14 @@ The basic idea is to divide the voltage into N different voltage values in the r
 # Switch 
 
 ### Terminal Functions
-|Name	   |	I/O |	Description       |
+|Name	   | Value |	Description       |
 |:-------|:----|:------------------|
-|D_in |I	  |Digital inputs     |
-|Capacitor|O	|DAC analog voltage output|
-|VDDA	|I	|Analog voltage supply (1.8)|
-|VSSA	|I	|Analog ground 0V|
-|VREFH |I	|Reference voltage low for DAC|
+|D_in |v1 = 0V, v2 = 1.05V, u = 0.1us|Digital inputs|
+|Capacitor|1pf|DAC analog voltage output|
+|VDDA	|1.8v|Analog voltage supply (1.8v)|
+|VSSA	|0v|Analog ground 0V|
+|VREFH |1.2v|Reference voltage High for DAC|
+|VREFL |0.8v|Reference voltage low for DAC|
  
 ## Switch design and simulation
 ![DAC_switch_new_schematic](https://user-images.githubusercontent.com/88897605/164980036-8a6a371a-60a2-44fa-aed5-81e3a3d4a516.png)
