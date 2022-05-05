@@ -62,6 +62,15 @@ The basic idea is to divide the voltage into N different voltage values in the r
 
 # Switch 
 
+### Terminal Functions
+|Name	   |	I/O |	Description       |
+|:-------|:----|:------------------|
+|D_in |I	  |Digital inputs     |
+|Capacitor|O	|DAC analog voltage output|
+|VDDA	|I	|Analog voltage supply (1.8)|
+|VSSA	|I	|Analog ground 0V|
+|VREFH |I	|Reference voltage low for DAC|
+ 
 ## Switch design and simulation
 ![DAC_switch_new_schematic](https://user-images.githubusercontent.com/88897605/164980036-8a6a371a-60a2-44fa-aed5-81e3a3d4a516.png)
 
