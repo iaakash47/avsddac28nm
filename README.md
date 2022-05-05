@@ -5,22 +5,24 @@
 # Table of Content
 1. [Introduction](#introduction)
     * [DAC](#dac)
-2. [IP Block Design](##ip-block-design)
-4. [Creation of project](#creation-of-project)
-    * [eSim Window ](#esim-window)
-    * [eSim Schematic Window](#esim-schematic-window)
-5. [Reference Circuit](#reference-circuit)
-6. [Reference Waveform](#reference-waveform)
-7. [Methodology](#methodology) 
-8. [Schematic](#schematic)
-9. [Circuit Schematic](#circuit-schematic)
-10. [Netlist](#netlist)
-11. [Initial Transitent Analysis](#initial-transitent-analysis)
-12. [Waveforms](#waveforms)
-    * [Input Waveforms](#input-waveforms)
-    * [Output Waveforms](#output-waveforms)
-13. [References](#references)
-14. [Contributor](#contributor)
+2. [IP Block Design](#ip-block-design)
+3. [Architecture](#architecture)
+4. [IP Design Specifications](#ip-design-specifications)
+5. [Implementation of 10Bit Potentiometric DAC](#implementation-of-10bit-potentiometric-dac)
+6. [Pre-layout Designs](#pre-layout-designs)
+   * [Switch](#switch)
+   * [2-Bit DAC](#2-bit-dac)
+   * [3-Bit DAC](#3-bit-dac)
+   * [4-Bit DAC](#4-bit-dac)
+   * [5-Bit DAC](#5-bit-dac)
+   * [6-Bit DAC](#6-bit-dac)
+   * [7-Bit DAC](#7-bit-dac)
+   * [8-Bit DAC](#8-bit-dac)
+   * [9-Bit DAC](#9-bit-dac)
+   * [10-Bit DAC](#10-bit-dac)
+9. [Methodology](#methodology)
+15. [References](#references)
+16. [Contributor](#contributor)
 
 ## Introduction 
 #### DAC 
@@ -39,9 +41,11 @@
 
 
 ## Implementation of 10Bit Potentiometric DAC
-The design used here to achieve this is the simple resistor string DAC which consists of resistors in series. These resistors are then connected to various switches in such a fashion that it routes the exact voltage to the output. The problem of the largeness of the circuit is reduced by building hierarchical subcircuits of 10-Bit potentiometric DAC – Switch, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, 7-bit, 8-bit, 9-bit and 10-bit and is to divide the voltage into N different voltage values in the range of VREFH and VREFL- for an N-Bit DAC.
+The basic idea is to divide the voltage into N different voltage values in the range of VREFH and VREFL- for an N-Bit DAC. The design used here to achieve this is the simple resistor string DAC which consists of resistors in series. These resistors are then connected to various switches in such a fashion that it routes the exact voltage to the output. The problem of the largeness of the circuit is reduced by building hierarchical subcircuits of 10-Bit potentiometric DAC – Switch, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, 7-bit, 8-bit, 9-bit and 10-bit.
 
 ## Pre-layout Designs
+
+# Switch 
 
 ## Switch design and simulation
 ![DAC_switch_new_schematic](https://user-images.githubusercontent.com/88897605/164980036-8a6a371a-60a2-44fa-aed5-81e3a3d4a516.png)
@@ -56,7 +60,8 @@ The design used here to achieve this is the simple resistor string DAC which con
 ![switch-waveform](https://user-images.githubusercontent.com/88897605/164980342-ab3aaf4f-ec4d-45c6-aee4-a8c5a7dc5f3d.png)
 
 
- 
+# 2-Bit DAC
+
 ## 2-Bit DAC design and simulation:
 ![DAC_2bit_DAC_schematic](https://user-images.githubusercontent.com/88897605/164980052-c9267798-0e0c-4e09-8dbd-df99a88a3fcf.png)
 
@@ -71,6 +76,7 @@ The design used here to achieve this is the simple resistor string DAC which con
 ![dac_2bit](https://user-images.githubusercontent.com/88897605/164980353-51b860fb-8e18-47e8-bcd5-9a51e549ec8c.png)
 
 
+# 3-Bit DAC
 
 ## 3-Bit DAC design and simulation: 
 ![DAC_3bit_DAC_schematic](https://user-images.githubusercontent.com/88897605/164980065-6536e03c-4f02-43dc-8804-e0a299fdc022.png)
@@ -88,6 +94,7 @@ The design used here to achieve this is the simple resistor string DAC which con
 
 
 
+# 4-Bit DAC
 
 ## 4-Bit DAC design and simulation: 
 ![DAC_4bit_DAC_schematic](https://user-images.githubusercontent.com/88897605/164980075-4c164a56-2e68-4562-9b68-fd0466a0b620.png)
@@ -105,6 +112,7 @@ The design used here to achieve this is the simple resistor string DAC which con
 
 
 
+# 5-Bit DAC
 
 ## 5-Bit DAC design and simulation:
 ![DAC_5bit_DAC_schematic](https://user-images.githubusercontent.com/88897605/164980093-02bc5682-28bd-43c2-a35e-8cd6af14dcaa.png)
@@ -121,6 +129,7 @@ The design used here to achieve this is the simple resistor string DAC which con
 
 
 
+# 6-Bit DAC
 
 ## 6-Bit DAC design and simulation:
 ![DAC_6bit_DAC_schematic](https://user-images.githubusercontent.com/88897605/164980114-d9121f6e-728c-4b42-91ee-aad19d387edc.png)
@@ -139,6 +148,7 @@ The design used here to achieve this is the simple resistor string DAC which con
 
 
 
+# 7-Bit DAC
 
 ## 7-Bit DAC design and simulation:
 ![DAC_7bit_DAC_schematic](https://user-images.githubusercontent.com/88897605/164980133-b7fcbdf5-0eab-4792-abc6-2ef10252a20a.png)
@@ -157,6 +167,7 @@ The design used here to achieve this is the simple resistor string DAC which con
 
 
 
+# 8-Bit DAC
 
 ## 8-Bit DAC design and simulation:
 
@@ -175,6 +186,9 @@ The design used here to achieve this is the simple resistor string DAC which con
 ![8bit_DAC](https://user-images.githubusercontent.com/88897605/166882259-17cdd7f5-07fe-431d-b797-98ee1251bdfe.png)
 
 
+
+# 9-Bit DAC
+
 ## 9-Bit DAC design and simulation:
 ![DAC_9bit_DAC_schematic](https://user-images.githubusercontent.com/88897605/164980158-bb4b294b-e96b-48eb-b3d0-b9242e75da15.png)
 
@@ -186,6 +200,9 @@ The design used here to achieve this is the simple resistor string DAC which con
 ![DAC_9bit_DAC_tb_schematic](https://user-images.githubusercontent.com/88897605/164980156-6c773642-8bba-4103-b124-86a1a7563557.png)
 ![9bit_DAC](https://user-images.githubusercontent.com/88897605/164980838-c7068fd8-92ea-423a-9e28-2945823d1f98.png)
 
+
+
+# 10-Bit DAC
 
 ## 10-Bit DAC design and simulation:
 ![DAC_10bit_DAC_schematic](https://user-images.githubusercontent.com/88897605/164980177-9cf0e6a4-1158-41fc-b02a-b7c8e219aadb.png)
