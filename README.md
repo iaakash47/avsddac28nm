@@ -308,6 +308,28 @@ The basic idea is to divide the voltage into N different voltage values in the r
 ![10bit_DAC](https://user-images.githubusercontent.com/88897605/166895511-83da0a55-ef69-4a4a-ac0c-46a6b1daf717.png)
 
 
+
+# Post Layout
+
+## switch
+![DAC_switch_new_layout](https://user-images.githubusercontent.com/88897605/168477842-39a77a34-df5e-4a3d-a7ee-c87391f930da.png)
+
+## 2bit DAC
+![DAC_2bit_DAC_layout](https://user-images.githubusercontent.com/88897605/168477876-5932298e-19dc-4719-b349-9b8904eb8f09.png)
+
+## 3Bit DAC
+![DAC_3bit_DAC_layout](https://user-images.githubusercontent.com/88897605/168477904-2ad70b85-d97c-43a7-b710-82303febc59a.png)
+
+## 4bit DAC
+![DAC_4bit_DAC_layout](https://user-images.githubusercontent.com/88897605/168477922-1cc2e007-ab88-4079-8c95-9714b2e7fc89.png)
+
+## 5bit DAC
+![DAC_5bit_DAC_layout](https://user-images.githubusercontent.com/88897605/168477935-fc64d799-7ed1-4502-a455-6b5e2b10c542.png)
+
+## 6bit DAC
+![DAC_5bit_DAC_layout](https://user-images.githubusercontent.com/88897605/168477944-b6c7d446-ea89-4515-8de4-21fd20db6daf.png)
+
+
 # Note
 * For 3 Bit DAC : D0, D1 and D2
 * For 4 Bit DAC : D0, D1, D2 and D3 and so on.
