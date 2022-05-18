@@ -112,6 +112,10 @@ The basic idea is to divide the voltage into N different voltage values in the r
 ## Switch Waveform
 ![switch-waveform](https://user-images.githubusercontent.com/88897605/164980342-ab3aaf4f-ec4d-45c6-aee4-a8c5a7dc5f3d.png)
 
+## Postlayout
+
+## switch
+![DAC_switch_new_layout](https://user-images.githubusercontent.com/88897605/168477842-39a77a34-df5e-4a3d-a7ee-c87391f930da.png)
 
 # 2-Bit DAC
 #### specification
@@ -144,6 +148,12 @@ The basic idea is to divide the voltage into N different voltage values in the r
 ## 2-Bit DAC Waveform
 ![dac_2bit](https://user-images.githubusercontent.com/88897605/164980353-51b860fb-8e18-47e8-bcd5-9a51e549ec8c.png)
 
+## Post Layout
+
+## 2bit DAC
+![DAC_2bit_DAC_layout](https://user-images.githubusercontent.com/88897605/168477876-5932298e-19dc-4719-b349-9b8904eb8f09.png)
+
+
 
 # 3-Bit DAC
 
@@ -163,7 +173,10 @@ The basic idea is to divide the voltage into N different voltage values in the r
 ![dac_3bit](https://user-images.githubusercontent.com/88897605/164980361-9318aa81-3cdd-4747-8d2f-4b1e57e2be24.png)
 ![3bit_DAC](https://user-images.githubusercontent.com/88897605/166882530-39647bd1-30d8-41dc-bf95-a1bd6804d518.png)
 
+## Post Layout
 
+## 3Bit DAC
+![DAC_3bit_DAC_layout](https://user-images.githubusercontent.com/88897605/168477904-2ad70b85-d97c-43a7-b710-82303febc59a.png)
 
 # 4-Bit DAC
 
@@ -183,6 +196,10 @@ The basic idea is to divide the voltage into N different voltage values in the r
 ![dac_4bit](https://user-images.githubusercontent.com/88897605/164980370-6271729e-dc16-4fdb-bcf8-f9aa55bf5534.png)
 ![4bit_DAC](https://user-images.githubusercontent.com/88897605/166882465-dbe752be-ec3a-40f8-8106-8300533e7ba7.png)
 
+## Post Layout
+
+## 4bit DAC
+![DAC_4bit_DAC_layout](https://user-images.githubusercontent.com/88897605/168477922-1cc2e007-ab88-4079-8c95-9714b2e7fc89.png)
 
 
 # 5-Bit DAC
@@ -202,7 +219,10 @@ The basic idea is to divide the voltage into N different voltage values in the r
 ![dac_5bit](https://user-images.githubusercontent.com/88897605/164980375-1c7f4dd3-d7ef-47bb-9703-21cfacebcb09.png)
 ![5bit_DAC](https://user-images.githubusercontent.com/88897605/166882383-23b45316-f0bc-44f9-b7f4-161cde70cef0.png)
 
+## Post Layout
 
+## 5bit DAC
+![DAC_5bit_DAC_layout](https://user-images.githubusercontent.com/88897605/168477935-fc64d799-7ed1-4502-a455-6b5e2b10c542.png)
 
 # 6-Bit DAC
 
@@ -222,6 +242,10 @@ The basic idea is to divide the voltage into N different voltage values in the r
 ![dac_6bit](https://user-images.githubusercontent.com/88897605/164980379-7fc6f6e4-e903-436d-80b6-ac6e91907a43.png)
 ![6bit_DAC](https://user-images.githubusercontent.com/88897605/166882340-94fcaaba-6eef-4c38-96ac-a45bc68618c3.png)
 
+## Post Layout
+
+## 6Bit DAC
+![DAC_6bit_DAC_layout](https://user-images.githubusercontent.com/88897605/169110665-64f1133c-c307-4f40-a145-fbe66bf293b0.png)
 
 
 # 7-Bit DAC
@@ -243,7 +267,10 @@ The basic idea is to divide the voltage into N different voltage values in the r
 
 ![7bit_DAC](https://user-images.githubusercontent.com/88897605/166882311-04b45756-5e68-4a9b-973e-31dca3c88186.png)
 
+## Post Layout
 
+## 7Bit DAC
+![DAC_7bit_DAC_layout](https://user-images.githubusercontent.com/88897605/169110735-46d0fba1-8a0f-4fc1-bbc8-be903ba7b7b8.png)
 
 # 8-Bit DAC
 
@@ -265,7 +292,10 @@ The basic idea is to divide the voltage into N different voltage values in the r
 
 ![8bit_DAC](https://user-images.githubusercontent.com/88897605/166882259-17cdd7f5-07fe-431d-b797-98ee1251bdfe.png)
 
+## Post Layout
 
+## 8Bit DAC
+![DAC_8bit_DAC_layout](https://user-images.githubusercontent.com/88897605/169110776-12318f72-f696-45ce-8a2d-b0fd171af0e5.png)
 
 # 9-Bit DAC
 
@@ -285,7 +315,10 @@ The basic idea is to divide the voltage into N different voltage values in the r
 ![9bit_DAC](https://user-images.githubusercontent.com/88897605/164980838-c7068fd8-92ea-423a-9e28-2945823d1f98.png)
 ![10bit_DAC](https://user-images.githubusercontent.com/88897605/166895511-83da0a55-ef69-4a4a-ac0c-46a6b1daf717.png)
 
+## Post Layout
 
+## 9Bit DAC
+![DAC_9bit_DAC_layout](https://user-images.githubusercontent.com/88897605/169110899-672551e0-c466-4fa6-96ae-96db89424a66.png)
 
 # 10-Bit DAC
 
@@ -307,39 +340,11 @@ The basic idea is to divide the voltage into N different voltage values in the r
 ![10bitDAC](https://user-images.githubusercontent.com/88897605/164980476-01544d4a-1c24-44c8-b08e-4427af935878.png)
 ![10bit_DAC](https://user-images.githubusercontent.com/88897605/166895511-83da0a55-ef69-4a4a-ac0c-46a6b1daf717.png)
 
-
-
 # Post Layout
-
-## switch
-![DAC_switch_new_layout](https://user-images.githubusercontent.com/88897605/168477842-39a77a34-df5e-4a3d-a7ee-c87391f930da.png)
-
-## 2bit DAC
-![DAC_2bit_DAC_layout](https://user-images.githubusercontent.com/88897605/168477876-5932298e-19dc-4719-b349-9b8904eb8f09.png)
-
-## 3Bit DAC
-![DAC_3bit_DAC_layout](https://user-images.githubusercontent.com/88897605/168477904-2ad70b85-d97c-43a7-b710-82303febc59a.png)
-
-## 4bit DAC
-![DAC_4bit_DAC_layout](https://user-images.githubusercontent.com/88897605/168477922-1cc2e007-ab88-4079-8c95-9714b2e7fc89.png)
-
-## 5bit DAC
-![DAC_5bit_DAC_layout](https://user-images.githubusercontent.com/88897605/168477935-fc64d799-7ed1-4502-a455-6b5e2b10c542.png)
- 
-## 6Bit DAC
-![DAC_6bit_DAC_layout](https://user-images.githubusercontent.com/88897605/169110665-64f1133c-c307-4f40-a145-fbe66bf293b0.png)
-
-## 7Bit DAC
-![DAC_7bit_DAC_layout](https://user-images.githubusercontent.com/88897605/169110735-46d0fba1-8a0f-4fc1-bbc8-be903ba7b7b8.png)
-
-## 8Bit DAC
-![DAC_8bit_DAC_layout](https://user-images.githubusercontent.com/88897605/169110776-12318f72-f696-45ce-8a2d-b0fd171af0e5.png)
-
-## 9Bit DAC
-![DAC_9bit_DAC_layout](https://user-images.githubusercontent.com/88897605/169110899-672551e0-c466-4fa6-96ae-96db89424a66.png)
 
 ## 10Bit DAC
 ![168643602-a5eb1fac-02c0-46d9-847d-ce4947dadf7d](https://user-images.githubusercontent.com/88897605/169111001-445fac1d-8948-4ae9-b980-f6d63c72e1cf.png)
+
 
 # Note
 * For 3 Bit DAC : D0, D1 and D2
@@ -354,7 +359,7 @@ The basic idea is to divide the voltage into N different voltage values in the r
 
 # Further Work
 
-* Need to start with custom layout for implementing 10 bit DAC
+* Need to start with custom layout stimulations for DAC Layout
 
 # References
 - Sammer Duroji VSD team
