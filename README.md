@@ -325,10 +325,21 @@ The basic idea is to divide the voltage into N different voltage values in the r
 
 ## 5bit DAC
 ![DAC_5bit_DAC_layout](https://user-images.githubusercontent.com/88897605/168477935-fc64d799-7ed1-4502-a455-6b5e2b10c542.png)
+ 
+## 6Bit DAC
+![DAC_6bit_DAC_layout](https://user-images.githubusercontent.com/88897605/169110665-64f1133c-c307-4f40-a145-fbe66bf293b0.png)
 
-## 6bit DAC
-![DAC_5bit_DAC_layout](https://user-images.githubusercontent.com/88897605/168477944-b6c7d446-ea89-4515-8de4-21fd20db6daf.png)
+## 7Bit DAC
+![DAC_7bit_DAC_layout](https://user-images.githubusercontent.com/88897605/169110735-46d0fba1-8a0f-4fc1-bbc8-be903ba7b7b8.png)
 
+## 8Bit DAC
+![DAC_8bit_DAC_layout](https://user-images.githubusercontent.com/88897605/169110776-12318f72-f696-45ce-8a2d-b0fd171af0e5.png)
+
+## 9Bit DAC
+![DAC_9bit_DAC_layout](https://user-images.githubusercontent.com/88897605/169110899-672551e0-c466-4fa6-96ae-96db89424a66.png)
+
+## 10Bit DAC
+![168643602-a5eb1fac-02c0-46d9-847d-ce4947dadf7d](https://user-images.githubusercontent.com/88897605/169111001-445fac1d-8948-4ae9-b980-f6d63c72e1cf.png)
 
 # Note
 * For 3 Bit DAC : D0, D1 and D2
