@@ -345,6 +345,9 @@ The basic idea is to divide the voltage into N different voltage values in the r
 ## 10Bit DAC
 ![168643602-a5eb1fac-02c0-46d9-847d-ce4947dadf7d](https://user-images.githubusercontent.com/88897605/169111001-445fac1d-8948-4ae9-b980-f6d63c72e1cf.png)
 
+## 10Bit DAC
+![DAC_10bit_DAC_layout](https://user-images.githubusercontent.com/88897605/169642496-8d66bc94-4e18-416f-96a1-99b373c3aab7.png)
+
 
 # Note
 * For 3 Bit DAC : D0, D1 and D2
